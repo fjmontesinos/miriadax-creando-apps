@@ -1,7 +1,7 @@
 var app={
   inicio: function(){
     this.iniciaBotones();
-    this.iniciaFastClick();
+    //this.iniciaFastClick();
     this.iniciaHammer();
   },
 
@@ -28,7 +28,12 @@ var app={
       zona.className='';
     });
     
-     hammertime.on('doubletap', function(ev) {
+    // Ejercicio 1.2. para poner en amarillo la zona de eventos
+    hammertime.on('tap', function(ev) {
+      zona.className='tap-amarillo';
+    });
+    
+    hammertime.on('doubletap', function(ev) {
       zona.className='doubletap';
     });
 
@@ -54,11 +59,13 @@ var app={
   },
 
   ponloClaro: function(){
-    document.body.className = 'claro';
+    // ejercicio 1.1.
+    document.body.className = 'verde-claro';
   },
 
   ponloOscuro: function(){
-    document.body.className = 'oscuro';
+    // ejercicio 1.1.
+    document.body.className = 'verde-oscuro';
   },
 
 };

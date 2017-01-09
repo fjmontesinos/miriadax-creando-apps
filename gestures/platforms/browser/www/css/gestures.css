@@ -97,3 +97,47 @@ button{
     -webkit-transform: rotate(360deg);
   } 
 }
+
+/* 
+Ejercicio 1.1.
+clases para cambiar el fondo de verde claro a verde oscuro y viceversa
+*/
+body.verde-claro{
+    -webkit-animation: verde-claro 3s 1;
+}
+
+body.verde-oscuro{
+    -webkit-animation: verde-oscuro 3s 1;
+}
+
+@-webkit-keyframes verde-claro {
+  0%, 100% {
+    background-color: #8de1bd;
+  }
+  50% {
+    background-color: #577a76;
+  }
+}
+
+@-webkit-keyframes verde-oscuro {
+  0%, 100% {
+    background-color: #577a76;
+  }
+  50% {
+    background-color: #8de1bd;
+  }
+}
+
+/*
+Ejercicio 1.2.
+Tap simple amarillo y vuelve al color que tenía
+*/
+#zona-gestos.tap-amarillo{
+    -webkit-animation: tap-amarillo 0.1s 1;
+}
+
+@-webkit-keyframes tap-amarillo {
+  0%, 100% {
+    background-color: yellow;
+  }
+}
