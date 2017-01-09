@@ -54,11 +54,13 @@ var app={
   },
 
   ponloClaro: function(){
-    document.body.className = 'claro';
+    // ejercicio 1.1.
+    document.body.className = 'verde-claro';
   },
 
   ponloOscuro: function(){
-    document.body.className = 'oscuro';
+    // ejercicio 1.1.
+    document.body.className = 'verde-oscuro';
   },
 
 };

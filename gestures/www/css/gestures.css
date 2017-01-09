@@ -97,3 +97,33 @@ button{
     -webkit-transform: rotate(360deg);
   } 
 }
+
+/* 
+Ejercicio 1.1.
+clases para cambiar el fondo de verde claro a verde oscuro y viceversa
+*/
+body.verde-claro{
+    -webkit-animation: verde-claro 3s 1;
+}
+
+body.verde-oscuro{
+    -webkit-animation: verde-oscuro 3s 1;
+}
+
+@-webkit-keyframes verde-claro {
+  0%, 100% {
+    background-color: #8de1bd;
+  }
+  50% {
+    background-color: #577a76;
+  }
+}
+
+@-webkit-keyframes verde-oscuro {
+  0%, 100% {
+    background-color: #577a76;
+  }
+  50% {
+    background-color: #8de1bd;
+  }
+}
