@@ -28,7 +28,12 @@ var app={
       zona.className='';
     });
     
-     hammertime.on('doubletap', function(ev) {
+    // Ejercicio 1.2. para poner en amarillo la zona de eventos
+    hammertime.on('tap', function(ev) {
+      zona.className='tap-amarillo';
+    });
+    
+    hammertime.on('doubletap', function(ev) {
       zona.className='doubletap';
     });
 

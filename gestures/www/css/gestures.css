@@ -127,3 +127,17 @@ body.verde-oscuro{
     background-color: #8de1bd;
   }
 }
+
+/*
+Ejercicio 1.2.
+Tap simple amarillo y vuelve al color que tenía
+*/
+#zona-gestos.tap-amarillo{
+    -webkit-animation: tap-amarillo 0.1s 1;
+}
+
+@-webkit-keyframes tap-amarillo {
+  0%, 100% {
+    background-color: yellow;
+  }
+}
